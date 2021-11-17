@@ -49,7 +49,7 @@ img.ava {
     border-radius: 20px;
 }
 .ava {
-    height: 200px;
+    height: 300px;
     width: auto;    
 }
 
@@ -163,5 +163,9 @@ p a {
     footer {
         grid-area: F;
         background-color:rgb(42, 42, 102);
+    }
+    .ava {
+        height: 200px;
+        width: auto;    
     }
   }
