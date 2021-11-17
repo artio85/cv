@@ -1,0 +1,126 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    min-height: 100vh;
+    background-color:#D1E5E5;
+    position: relative;
+}
+.container {
+    display: grid;
+    grid-column-gap: 0;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+}
+header {
+    grid-column: 1/3;
+    grid-row: 1;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+aside {
+    grid-column: 1;
+    grid-row: 2/3;
+    position: fixed;
+    top: 78px;
+}
+main {
+    grid-column: 2/3;
+    grid-row: 2/6;
+}
+footer {
+    grid-column: 1/3;
+    grid-row: 7;
+    background-color:rgb(42, 42, 102);
+}
+
+/* aside  */
+div.foto p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0;    
+}
+.foto{
+    text-align: center;
+}
+img.ava {
+    border-radius: 20px;
+}
+.ava {
+    height: 200px;
+    width: auto;    
+}
+
+/* Nav menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #660099;
+}  
+li {
+    float: right;
+}  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}  
+.active_btn, .btn:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+  /*  main  */
+section article {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(42, 42, 102);
+    text-align: center;
+    text-decoration: underline;
+}
+.section {
+    padding-top: 60px;
+}
+p a {
+    text-decoration: none;
+    color: rgb(42, 42, 102);
+}
+.w_title {
+    background-color: #9999FF;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    outline: none;
+    transition-duration: 3s;
+}
+.active, .w_title:hover {
+    background-color: rgb(68, 83, 124);
+    text-align: center;
+    transition-duration: 3s;
+    transform: translateX(10%);
+}  
+.desc {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    height: 0px;  
+}
+
+/*    */
+.home {
+    position: fixed;
+    bottom: 50px;
+    left: 0px;
+    border-radius:10%;
+    width: 20px;
+    height: 20px;
+}
